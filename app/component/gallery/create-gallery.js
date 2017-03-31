@@ -11,7 +11,7 @@ function CreateGalleryController($log, galleryService) {
 
   this.gallery = {};
 
-  this.createGallery = funciton() {
+  this.createGallery = function() {
     galleryService.createGallery(this.gallery)
     .then( () => {
       this.gallery.name = null;
